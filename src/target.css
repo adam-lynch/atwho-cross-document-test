@@ -1,0 +1,21 @@
+body {
+    background: gray;
+    color: white;
+}
+
+textarea {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: black;
+}
+
+#position {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 12px;
+}
