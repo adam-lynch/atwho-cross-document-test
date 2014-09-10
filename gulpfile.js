@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 
-gulp.task('default', function(){
+gulp.task('serve', function(){
     browserSync({
         server: {
             baseDir: './src'
@@ -9,3 +9,9 @@ gulp.task('default', function(){
         ghostMode: false
     });
 });
+
+gulp.task('watch', ['serve'], function(){
+    gulp.watch(['./src/**', './bower_components/**'], browserSync.reload)
+});
+
+gulp.task('default', ['watch']);
