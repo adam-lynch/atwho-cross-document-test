@@ -36,6 +36,8 @@ Icon
 .Spotlight-V100
 .Trashes
 
+node_modules/
+bower_components
 src/third-party
 src/third-party.*
 
